@@ -4,7 +4,17 @@
  * test
  */
 
-import { MapPin, Phone, Clock, FileText, ChevronRight } from 'lucide-react';
+import {
+  MapPin,
+  Phone,
+  Clock,
+  FileText,
+  ChevronRight,
+  Instagram,
+  Facebook,
+  Youtube,
+  Music2,
+} from 'lucide-react';
 import { motion } from 'motion/react';
 import logo from './assets/logo.jpg';
 import headerImage from './assets/Header.png';
@@ -22,6 +32,7 @@ export default function App() {
     { name: 'Specials', href: '#specials' },
     { name: 'Catering', href: '#catering' },
     { name: 'Location', href: '#location' },
+    { name: 'Socials', href: '#social' },
   ];
 
   return (
@@ -302,6 +313,74 @@ export default function App() {
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
                 />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Social Media Section */}
+        <section id="social" className="py-16 bg-surface">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="bg-white border border-surface-container-high rounded-3xl p-8 md:p-10 shadow-sm text-center">
+              <h2 className="font-headline italic font-black text-4xl md:text-5xl text-primary uppercase tracking-tighter mb-4">
+                Follow Our Social Media
+              </h2>
+              <p className="text-stone-600 text-lg mb-8">
+                Stay updated with our latest specials, menu highlights, and behind-the-scenes moments.
+              </p>
+              <div className="flex flex-wrap items-start justify-center gap-6">
+                <div className="flex flex-col items-center gap-2">
+                  <a
+                    href="https://www.instagram.com/bigwokchinesefastfood/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram"
+                    title="Instagram"
+                    className="inline-flex h-14 w-14 items-center justify-center bg-primary text-white rounded-xl hover:bg-primary-container transition-colors"
+                  >
+                    <Instagram className="h-7 w-7" />
+                  </a>
+                  <span className="text-sm font-semibold text-stone-700">Instagram</span>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <a
+                    href="https://www.tiktok.com/@bigwokcff"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on TikTok"
+                    title="TikTok"
+                    className="inline-flex h-14 w-14 items-center justify-center bg-black text-white rounded-xl hover:bg-stone-800 transition-colors"
+                  >
+                    <Music2 className="h-7 w-7" />
+                  </a>
+                  <span className="text-sm font-semibold text-stone-700">TikTok</span>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61582023724501"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook"
+                    title="Facebook"
+                    className="inline-flex h-14 w-14 items-center justify-center bg-[#1877F2] text-white rounded-xl hover:bg-[#166fe0] transition-colors"
+                  >
+                    <Facebook className="h-7 w-7" />
+                  </a>
+                  <span className="text-sm font-semibold text-stone-700">Facebook</span>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <a
+                    href="https://www.youtube.com/@BigWokChineseFastFood/shorts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on YouTube"
+                    title="YouTube"
+                    className="inline-flex h-14 w-14 items-center justify-center bg-[#FF0000] text-white rounded-xl hover:bg-[#e60000] transition-colors"
+                  >
+                    <Youtube className="h-7 w-7" />
+                  </a>
+                  <span className="text-sm font-semibold text-stone-700">YouTube</span>
+                </div>
               </div>
             </div>
           </div>
